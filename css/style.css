@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+
+
+.modal{
+    position: absolute;
+    transition: all ease 1s;
+    top:100px;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    /* animation-name: color;  
+    animation-duration: 7s;
+    animation-iteration-count: 0.1s; */
+    display: none;
+    z-index: 2;
+    box-shadow: 1px 1px 10px 1px white;
+}
+
+.open_block{
+    display: block;
+    transition: all ease 1s;
+    position: relative;
+}
+
+.form_inp{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+   
+}
+
+.inp{
+    width: 250px;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 24px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.415);
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+}
+
+.btn__log{
+    padding: 10px 30px;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(12, 251, 243);
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all ease-in-out 0.8s;
+}
+.btn__log:hover{
+    background-color: rgb(252, 235, 191);
+    color: #000;
+}
+
+.close__x{
+    position: absolute;
+    top: 15px;
+    right: -60px;
+    border: none;
+    padding: 6px 15px;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.8s;
+}
+.close__x:hover{
+    background-color: black;
+    color: white;
+}
+
+.btn__close{
+    margin-right: 15px;
+    border: none;
+    outline: none;
+    padding: 6px 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all ease 0.8s;
+    cursor: pointer;
+}
+.btn__close:hover{
+    background-color: #000;
+    color: white;
+    font-weight: 600;
+}
+
+.btn__save{
+    border: none;
+    outline: none;
+    padding: 6px 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all ease 0.8s;
+    cursor: pointer;
+}
+.btn__save:hover{
+    background-color: #000;
+    color: white;
+    font-weight: 600;
+}
+
+span{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.btn__open{
+    padding: 10px 33px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: chartreuse;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: all ease 0.8s;
+}
+.btn__open:hover{
+    background-color: cyan;
+    color: red;
+}
+.btn__open:active{
+    background-color: red;
+    color: blue;
+}
+
+
+
+.shadow_block{
+    position: absolute;
+    top: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+}
